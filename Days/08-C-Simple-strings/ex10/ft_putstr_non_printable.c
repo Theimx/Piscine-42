@@ -20,11 +20,23 @@ int	ft_str_is_printable(char c)
 
 void	dec_to_hexa(char c)
 {
-	char	*hex;
+	char	r;
+	int		res;
+	int		temp;
 
-	hex = "0123456789abcdef";
-	write(1, &hex[(unsigned char)c / 16], 1);
-	write(1, &hex[(unsigned char)c % 16], 1);
+	res = (unsigned char)c;
+	temp = res / 16;
+	if (temp < 10)
+		r = temp + 48;
+	else
+		r = temp + 87;
+	write(1, &r, 1);
+	temp = res % 16;
+	if (temp < 10)
+		r = temp + 48;
+	else
+		r = temp + 87;
+	write(1, &r, 1);
 }
 
 void	ft_putstr_non_printable(char *str)
