@@ -1,42 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/18 10:38:18 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/20 11:43:22 by gfaimali         ###   ########.fr       */
+/*   Created: 2026/08/20 11:48:56 by gfaimali          #+#    #+#             */
+/*   Updated: 2026/08/20 15:40:15 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*ft_range(int min, int max)
+int	ft_len(char *str)
 {
-	int	*array_ints;
 	int	i;
 
-	if (min >= max)
-		return (NULL);
-	array_ints = malloc(sizeof(int) * (max - min));
-	if (array_ints == NULL)
-		return (NULL);
 	i = 0;
-	while (i < (max - min))
+	while (str[i] != '\0')
 	{
-		array_ints[i] = min + i;
 		i++;
 	}
-	return (array_ints);
+	return (i);
 }
-/*
-#include <stdio.h>
-int main()
+
+int	ft_final_len(char **strs, int size, char *sep)
 {
-	int *arr = ft_range(5,15);
-	for (int i = 0; i < 10; i++)
-		printf("%d\n", arr[i]);
-	return (0);
+	int	res;
+	int	i;
+
+	res = 0;
+	i = 0;
+	if (size == 0)
+		return (0);
+
+	while (strs[i] != NULL)
+	{
+		res += ft_len(strs[i]);
+		i++;
+		if (strs[i] != NULL)
+			res += ft_len(sep);
+	}
+	return (res);
 }
-*/
