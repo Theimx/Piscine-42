@@ -1,0 +1,17 @@
+FONCTION ft_ultimate_range(range, min, max)
+
+    SI min >= max
+        RETOURNER -1
+
+    allouer un tableau de taille (max - min)
+    faire pointer range vers ce tableau
+
+    i ← 0
+
+    TANT QUE min < max
+        tableau[i] ← min
+        min ← min + 1
+        i ← i + 1
+
+    RETOURNER i
+FIN
