@@ -1,0 +1,32 @@
+FONCTION strlen(str)
+    longueur ← 0
+    TANT QUE str[longueur] ≠ '\0'
+        longueur ← longueur + 1
+    RETOURNER longueur
+
+
+FONCTION copy(strs, result, size, sep)
+    k ← 0
+
+    POUR i de 0 à size - 1
+        copier strs[i] dans result à partir de k
+
+        SI i < size - 1
+            copier sep dans result à partir de k
+
+    result[k] ← '\0'
+    RETOURNER result
+
+
+FONCTION strjoin(size, strs, sep)
+    SI size = 0
+        result ← allouer 1 caractère
+        result[0] ← '\0'
+        RETOURNER result
+
+    len ← somme des longueurs de strs
+    len ← len + longueur(sep) × (size - 1)
+
+    result ← allouer len + 1 caractères
+
+    RETOURNER copy(strs, result, size, sep)
