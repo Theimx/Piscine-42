@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 17:12:36 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/20 18:19:06 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/20 18:06:53 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,3 @@ char	**ft_split(char *str, char *charset)
 	res = malloc(sizeof (char *) * (count_word(str) + 1));
 
 }
-
-Gerer le cas dans pour lequel ca commence part un separateur.
