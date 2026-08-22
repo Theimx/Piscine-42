@@ -38,6 +38,7 @@ char	*ft_strdup(char *src)
 		clone[i] = src[i];
 		i++;
 	}
+	clone[i] = '\0';
 	return (clone);
 }
 /*
