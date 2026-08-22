@@ -36,9 +36,9 @@ int	ft_final_len(char **strs, int size, char *sep)
 	while (i < size)
 	{
 		res += ft_len(strs[i]);
-		i++;
 		if (i < size - 1)
 			res += ft_len(sep);
+		i++;
 	}
 	return (res);
 }
