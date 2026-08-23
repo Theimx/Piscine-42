@@ -6,9 +6,10 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 17:12:36 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/22 15:43:44 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/23 12:25:00 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 // Aide : marudman, 
 #include <stdlib.h>
 
@@ -79,11 +80,9 @@ char	**ft_split(char *str, char *charset)
 {
 	char	**strs;
 	int		i;
-	int		j;
 	int		k;
 
 	i = 0;
-	j = 0;
 	k = 0;
 	strs = malloc(sizeof(char *) * nb_word(str, charset));
 	if (strs == NULL)
@@ -100,7 +99,7 @@ char	**ft_split(char *str, char *charset)
 	strs[i] = NULL;
 	return (strs);
 }
-
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -118,5 +117,4 @@ int	main(void)
 	free(tab);
 	return (0);
 }
-
-
+*/
