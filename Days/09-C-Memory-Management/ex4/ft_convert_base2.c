@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 16:09:35 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/23 14:48:31 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/23 18:43:53 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,15 @@ int	id_base(char elt, char *base)
 	return (0);
 }
 
+int	power(int nb, int power)
+{
+	if (power == 0)
+		return (1);
+	else if (power < 0)
+		return (0);
+	else
+		return (nb * ft_recursive_power(nb, power - 1));
+}
 
 #include <stdio.h>
 int	main()
