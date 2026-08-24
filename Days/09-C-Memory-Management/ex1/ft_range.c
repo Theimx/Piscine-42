@@ -15,15 +15,17 @@
 int	*ft_range(int min, int max)
 {
 	int	*array_ints;
-	int	i;
+	long	size;
+	long	i;
 
 	if (min >= max)
 		return (NULL);
-	array_ints = malloc(sizeof(int) * (max - min));
+	size = (long)max - (long)min;
+	array_ints = malloc(sizeof(int) * size);
 	if (array_ints == NULL)
 		return (NULL);
 	i = 0;
-	while (i < (max - min))
+	while (i < size)
 	{
 		array_ints[i] = min + i;
 		i++;
