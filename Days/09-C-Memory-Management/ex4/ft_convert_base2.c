@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 16:09:35 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/23 18:43:53 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/24 10:45:44 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,34 +67,55 @@ int	id_base(char elt, char *base)
 	return (0);
 }
 
-int	power(int nb, int power)
+int	ft_power(int nb, int power)
 {
 	if (power == 0)
 		return (1);
 	else if (power < 0)
 		return (0);
 	else
-		return (nb * ft_recursive_power(nb, power - 1));
+		return (nb * ft_power(nb, power - 1));
 }
 
+int     len_malloc(int nb, char *base_to)
+{
+        int     res;
+        int     base_len;
+
+        res = 0;
+        base_len = len(base_to);
+        
+        if (nb == 0)
+                return (1);
+        if (nb < 0)
+        {
+                res++;
+        }
+        while (nb != 0)
+        {
+                nb = nb / base_len;
+                res++;
+        }
+        return (res);
+}
+/*
 #include <stdio.h>
 int	main()
 {
-	/*
+	
 	printf("%d\n", id_base('0', "0123456789"));
 	printf("%d\n", id_base('9', "0123456789"));
 	printf("%d\n", id_base('t', "0123456789"));
 	printf("%d\n", id_base(' ', "0123456789"));
-	*/
 
-	/* len : Valide
+
+	len : Valide
 	printf("%d\n", len(""));
 	printf("%d\n", len("1"));
 	printf("%d\n", len("10"));
 	printf("%d\n", len("101"));
-	*/
 
-	/* is_base_correct : Valide
+	is_base_correct : Valide
 	printf("%d\n", is_base_correct("1"));
 	printf("%d\n", is_base_correct("01"));
 	printf("%d\n", is_base_correct("+01"));
@@ -104,7 +125,8 @@ int	main()
 	printf("%d\n", is_base_correct("010234"));
 	printf("%d\n", is_base_correct("^*&%#"));
 	printf("%d\n", is_base_correct("1236 7890"));
-	*/
+	
 
 	return (0);
 }
+*/
