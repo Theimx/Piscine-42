@@ -18,9 +18,7 @@ int	ft_len(char *str)
 
 	i = 0;
 	while (str[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -31,8 +29,6 @@ int	ft_final_len(char **strs, int size, char *sep)
 
 	res = 0;
 	i = 0;
-	if (size == 0)
-		return (0);
 	while (i < size)
 	{
 		res += ft_len(strs[i]);
@@ -63,11 +59,11 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		i;
 	int		k;
 
-	i = 0;
-	k = 0;
 	res = malloc(ft_final_len(strs, size, sep) + 1);
 	if (res == NULL)
 		return (NULL);
+	i = 0;
+	k = 0;
 	while (i < size)
 	{
 		k = ft_copy(res, strs[i], k);
