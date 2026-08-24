@@ -22,17 +22,17 @@ int	ft_ultimate_range(int **range, int min, int max)
 		*range = NULL;
 		return (0);
 	}
-	i = 0;
 	size = max - min;
-	*range = (int *)malloc(sizeof(int) * size);
+	*range = malloc(sizeof(int) * size);
 	if (*range == NULL)
 		return (-1);
+	i = 0;
 	while (i < size)
 	{
 		(*range)[i] = min + i;
 		i++;
 	}
-	return (i);
+	return (size);
 }
 /*
 #include <stdio.h>
