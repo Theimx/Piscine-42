@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/22 16:09:35 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/24 10:45:44 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/24 13:22:05 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,11 +98,16 @@ int     len_malloc(int nb, char *base_to)
         }
         return (res);
 }
-/*
+
 #include <stdio.h>
 int	main()
 {
+	printf("%d\n", len_malloc(10, "0123456789"));
+        printf("%d\n", len_malloc(-10, "0123456789"));
+        printf("%d\n", len_malloc(10, "01"));
+        printf("%d\n", len_malloc(-10, "01"));
 	
+	/*	
 	printf("%d\n", id_base('0', "0123456789"));
 	printf("%d\n", id_base('9', "0123456789"));
 	printf("%d\n", id_base('t', "0123456789"));
@@ -125,8 +130,8 @@ int	main()
 	printf("%d\n", is_base_correct("010234"));
 	printf("%d\n", is_base_correct("^*&%#"));
 	printf("%d\n", is_base_correct("1236 7890"));
-	
+	*/	
 
 	return (0);
 }
-*/
+

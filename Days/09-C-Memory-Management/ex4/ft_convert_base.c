@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/23 14:59:16 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/24 11:46:42 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/24 13:36:58 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ char	*dec_to_BaseN(int nb,char *base_to)
 	return (str);	
 }
 
-
 char *ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
 	char 	*res;
@@ -60,7 +59,6 @@ char *ft_convert_base(char *nbr, char *base_from, char *base_to)
 	len_malloc = len_malloc(dec_nbr, base_to);
 
 }
-
 
 #include <stdio.h>
 int	main()
