@@ -41,23 +41,42 @@ int     baseN_to_dec(char *nbr, char *base_from)
         return (res * sign);
 }
 
-char	*dec_to_BaseN(int nb,char *base_to)
+char	*dec_to_BaseN(int nb, char *base_to)
 {
-	char *str = " ";
-	return (str);	
+	char		*str;
+	int			base_len;
+	int			neg;
+	unsigned int	n;
+	int			i;
+
+	base_len = len(base_to);
+	neg = (nb < 0);
+	n = neg ? -(unsigned int)nb : (unsigned int)nb;
+	i = len_malloc(nb, base_to) + neg;
+	str = malloc(sizeof(char) * (i + 1));
+	if (!str)
+		return (NULL);
+	str[i--] = '\0';
+	if (n == 0)
+		str[i--] = base_to[0];
+	while (n != 0)
+	{
+		str[i--] = base_to[n % base_len];
+		n /= base_len;
+	}
+	if (neg)
+		str[0] = '-';
+	return (str);
 }
 
-char *ft_convert_base(char *nbr, char *base_from, char *base_to)
+char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
-	char 	*res;
-	int		dec_nbr;
-	int		len_malloc;
+	int	dec_nbr;
 
 	if (is_base_correct(base_from) != 1 || is_base_correct(base_to) != 1)
 		return (NULL);
 	dec_nbr = baseN_to_dec(nbr, base_from);
-	len_malloc = len_malloc(dec_nbr, base_to);
-
+	return (dec_to_BaseN(dec_nbr, base_to));
 }
 
 #include <stdio.h>
