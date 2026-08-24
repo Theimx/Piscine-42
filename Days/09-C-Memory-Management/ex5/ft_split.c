@@ -93,7 +93,12 @@ char	**ft_split(char *str, char *charset)
 			k++;
 		strs[i] = copy(str, charset, &k);
 		if (strs[i] == NULL)
+		{
+			while (i > 0)
+				free(strs[--i]);
+			free(strs);
 			return (NULL);
+		}
 		i++;
 	}
 	strs[i] = NULL;
