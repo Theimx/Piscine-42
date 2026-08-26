@@ -19,7 +19,7 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		write(1, &str[i], 1);
 		i++;
@@ -27,25 +27,25 @@ void	ft_putstr(char *str)
 	write(1, "\n", 1);
 }
 
-void	show_tab(int argc, char  **argv)
+void	show_tab(int argc, char **argv)
 {
 	int	i;
 
 	i = 1;
-	while  (i < argc)
+	while (i < argc)
 	{
 		ft_putstr(argv[i]);
 		i++;
 	}
 }
 
-void    ft_swap(char **stra, char **strb) {
-    char    *temp;
+void	ft_swap(char **stra, char **strb)
+{
+	char	*temp;
 
-    printf("swap\n");
-    temp = *stra;
-    *stra = *strb;
-    *strb = temp;
+	temp = *stra;
+	*stra = *strb;
+	*strb = temp;
 }
 
 int	ft_strcmp(char *s1, char *s2)
@@ -54,9 +54,7 @@ int	ft_strcmp(char *s1, char *s2)
 
 	i = 0;
 	while (s1[i] != '\0' && s1[i] == s2[i])
-	{
 		i++;
-	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
@@ -67,13 +65,13 @@ int	main(int argc, char **argv)
 	i = 1;
 	while (i < argc - 1)
 	{
-		if (ft_strcmp(argv[i], argv[i - 1]) <= ft_strcmp(argv[i - 1], argv[i])
-			&& (i != 1))
+		if (ft_strcmp(argv[i], argv[i + 1]) > 0)
 		{
-			ft_swap(&argv[i], &argv[i + i]);
+			ft_swap(&argv[i], &argv[i + 1]);
 			i = 1;
 		}
-		i++;
+		else
+			i++;
 	}
 	show_tab(argc, argv);
 	return (0);
