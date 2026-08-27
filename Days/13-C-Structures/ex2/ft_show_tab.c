@@ -6,13 +6,14 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 21:47:38 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/27 22:53:35 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/27 23:52:13 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "ft_stock_str.h"
 
-int	rec(int nb)
+int	ft_rec(int nb)
 {
 	char	c;
 
@@ -23,7 +24,7 @@ int	rec(int nb)
 	else if (nb >= 1)
 	{
 		c = (nb % 10) + '0';
-		rec((nb / 10));
+		ft_rec((nb / 10));
 		write(1, &c, 1);
 		return (0);
 	}
@@ -45,7 +46,7 @@ void	ft_putnbr(int nb)
 		write(1, "-", 1);
 		nb = -nb;
 	}
-	rec(nb);
+	ft_rec(nb);
 }
 
 void	ft_show_tab(struct s_stock_str *par)
