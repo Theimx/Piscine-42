@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 21:47:38 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/27 22:13:27 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/27 22:53:35 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,30 +48,31 @@ void	ft_putnbr(int nb)
 	rec(nb);
 }
 
-void	ft_putstr(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
-	write(1, "\n", 1);
-}
-
 void	ft_show_tab(struct s_stock_str *par)
 {
 	int	i;
+	int	j;
 
 	i = 0;
+	(void)j;
 	while (par[i].str != 0)
 	{
-		ft_putstr(par[i].str);
+		j = 0;
+		while (par[i].str[j] != '\0')
+		{
+			write(1, &par[i].str[j], 1);
+			j++;
+		}
+		write(1, "\n", 1);
 		ft_putnbr(par[i].size);
 		write(1, "\n", 1);
-		ft_putstr(par[i].copy);
+		j = 0;
+		while (par[i].copy[j] != '\0')
+		{
+			write(1, &par[i].copy[j], 1);
+			j++;
+		}
+		write(1, "\n", 1);
 		i++;
 	}
 }
