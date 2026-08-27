@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_stock_str.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/27 17:17:25 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/27 17:57:15 by gfaimali         ###   ########.fr       */
+/*   Created: 2026/08/27 18:02:42 by gfaimali          #+#    #+#             */
+/*   Updated: 2026/08/27 18:02:48 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
-
-typedef struct s_point
+typedef struct s_stock_str
 {
-	int	x;
-	int	y;
-}		t_point;
-
-void	set_point(t_point *point);
-
-#endif
+int size;
+char *str;
+char *copy;
+} t_stock_str;

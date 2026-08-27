@@ -1,24 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_point.h                                         :+:      :+:    :+:   */
+/*   ft_strs_to_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/27 17:17:25 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/27 17:57:15 by gfaimali         ###   ########.fr       */
+/*   Created: 2026/08/27 17:57:54 by gfaimali          #+#    #+#             */
+/*   Updated: 2026/08/27 18:06:19 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_POINT_H
-# define FT_POINT_H
+#include <stdlib.h>
 
-typedef struct s_point
+struct s_stock_str *ft_strs_to_tab(int ac, char **av)
 {
-	int	x;
-	int	y;
-}		t_point;
 
-void	set_point(t_point *point);
 
-#endif
+}
