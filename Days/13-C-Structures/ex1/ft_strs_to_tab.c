@@ -6,7 +6,7 @@
 /*   By: gfaimali <gfaimali@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/27 17:57:54 by gfaimali          #+#    #+#             */
-/*   Updated: 2026/08/27 21:29:59 by gfaimali         ###   ########.fr       */
+/*   Updated: 2026/08/27 21:46:26 by gfaimali         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	len(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		i++
+		i++;
 	}
 	return (i);
 }
@@ -28,7 +28,7 @@ int	len(char *str)
 char	*ft_strcpy( char *src)
 {
 	char	*res;
-	int	i;
+	int		i;
 
 	res = malloc(sizeof(char) * len(src) + 1);
 	i = 0;
@@ -41,24 +41,23 @@ char	*ft_strcpy( char *src)
 	return (res);
 }
 
-struct s_stock_str *ft_strs_to_tab(int ac, char **av)
+struct	s_stock_str	*ft_strs_to_tab(int ac, char **av)
 {
-	int	i;
-	struct s_stock_str struc;
-	struct s_stock_str *	res;
+	struct s_stock_str	*res;
+	int					i;
 
 	i = 0;
-	res = malloc(sizeof(s_stock_str) * ac);
+	res = malloc(sizeof(struct s_stock_str) * (ac + 1));
 	if (res == NULL)
 		return (NULL);
 	while (i < ac)
 	{
-		struc->size = len(av[i]);
-		struc->str = tab[i];
-		struc->copy = ft_strcpy(tab[i]);
-		res[i] = struc;
+		res[i].size = len(av[i]);
+		res[i].str = av[i];
+		res[i].copy = ft_strcpy(av[i]);
 		i++;
 	}
-	res[i] = 0;
+	res[i].str = 0;
+	res[i].copy = 0;
 	return (res);
 }
