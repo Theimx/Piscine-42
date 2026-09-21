@@ -11,25 +11,25 @@
 ---
 ### *Content* :   
    
-**01-Shell-Fundamentals**   
-**02-Git-Fundamentals**   
-**03-Shell-searching-and-finding**   
+- **01-Shell-Fundamentals**   
+- **02-Git-Fundamentals**   
+- **03-Shell-searching-and-finding**   
    
-**04-C-Programming-Fundamentals**   
-**05-C-Characters-Arithmetics**   
-**06-C-Algorithmics-Fundamentals**   
+- **04-C-Programming-Fundamentals**   
+- **05-C-Characters-Arithmetics**   
+- **06-C-Algorithmics-Fundamentals**   
    
-**07-C-Pointers**   
-**08-Simple-Strings**   
-**09-C-Memory-Management**   
-**10-C-Strings**   
+- **07-C-Pointers**   
+- **08-Simple-Strings**   
+- **09-C-Memory-Management**   
+- **10-C-Strings**   
    
-**11-C-System-Interface**   
-**12-C-Function-Pointers**   
-**13-C-Structures**   
+- **11-C-System-Interface**   
+- **12-C-Function-Pointers**   
+- **13-C-Structures**   
    
-**Exam.md**   
-**Rush-Square**   
-**Rush-Sky-Scrapers**   
+- **Exam.md**   
+- **Rush-Square**   
+- **Rush-Sky-Scrapers**   
    
 ---
