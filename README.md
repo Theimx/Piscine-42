@@ -7,7 +7,7 @@
 
 ---
 ### *Description* :
-**Ensemble des exercices realisé durant la piscine de 42 d'Aout 2026.**
+- **Ensemble des exercices realisé durant la piscine de 42 d'Aout 2026.**
 ---
 ### *Content* :  
 **01-Shell-Fundamentals** : 4 Directory      
