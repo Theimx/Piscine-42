@@ -1,3 +1,4 @@
+# Piscine-42 Aout-2026
 > **Ensemble des exercices realisé durant la piscine de 42 d'Aout 2026.**      
 **Language : Language C, Shell**  
 **AI : No AI used**   
@@ -5,7 +6,6 @@
 **File : 10 Language C Directory ; 3 Shell Directory**  
 **Number total of lines :  2783**   
    
-# Piscine-42 Aout-2026
 ---
 ### *Content* :  
 **01-Shell-Fundamentals** : 4 Directory      
