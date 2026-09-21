@@ -12,7 +12,7 @@
 ### *Content*
 
 ```text
-01-Shell-Fundamentals            :  4 Directory
+01-Shell-Fundamental            :  4 Directory
 02-Git-Fundamentals              :  2 Directory
 03-Shell-searching-and-finding   :  3 Directory
 
