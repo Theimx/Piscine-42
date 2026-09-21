@@ -9,26 +9,23 @@
 ### *Description* :
 - **Ensemble des exercices realisé durant la piscine de 42 d'Aout 2026.**
 ---
-### *Content* :  
-**01-Shell-Fundamentals** :           4 Directory      
-**02-Git-Fundamentals** :             2 Directory     
-**03-Shell-searching-and-finding** :  3 Directory   
-   
-**04-C-Programming-Fundamentals** :   5 Directory      
-**05-C-Characters-Arithmetics** :     3 Directory    
-**06-C-Algorithmics-Fundamentals** :  5 Directory      
-   
-**07-C-Pointers** :                   7 Directory   
-**08-Simple-Strings** :              10 Directory      
-**09-C-Memory-Management** :          6 Directory    
-**10-C-Strings** :                    8 Directory      
-   
-**11-C-System-Interface** :           4 Directory       
-**12-C-Function-Pointers** :          5 Directory    
-**13-C-Structures** :                 3 Directory     
-    
-**Exam.md** :                         0 Directory   
-**Rush-Square** :                     1 Directory   
-**Rush-Sky-Scrapers** :               1 Directory   
-   
----
+### *Content* :
+
+| Content | Directories |
+|---|---:|
+| **01-Shell-Fundamentals** | 4 |
+| **02-Git-Fundamentals** | 2 |
+| **03-Shell-searching-and-finding** | 3 |
+| **04-C-Programming-Fundamentals** | 5 |
+| **05-C-Characters-Arithmetics** | 3 |
+| **06-C-Algorithmics-Fundamentals** | 5 |
+| **07-C-Pointers** | 7 |
+| **08-Simple-Strings** | 10 |
+| **09-C-Memory-Management** | 6 |
+| **10-C-Strings** | 8 |
+| **11-C-System-Interface** | 4 |
+| **12-C-Function-Pointers** | 5 |
+| **13-C-Structures** | 3 |
+| **Exam.md** | 0 |
+| **Rush-Square** | 1 |
+| **Rush-Sky-Scrapers** | 1 |
