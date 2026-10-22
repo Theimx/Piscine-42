@@ -1,5 +1,6 @@
 # Piscine-42 Aout-2026       
 > **Language : Language C, Shell**  
+**Satus : Admis**   
 **AI : No AI used**   
 **Number total of files :  66**   
 **File : 10 Language C Directory ; 3 Shell Directory**  
